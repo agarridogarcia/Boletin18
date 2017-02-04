@@ -47,23 +47,8 @@ public class Buzon {
     }
     
     
-    public void amosaPrimerNoLeido(){
-        Correo mail=new Correo();
-        int i=Buzon.size();
-        boolean existe;
-        do{
-            i--;
-            existe=Buzon.contains(i);
-            System.out.println("--" +existe);
-            if(existe)
-                mail=Buzon.get(i);
-            
-        }while(mail.isLido()==true && existe==true);
-        if(existe){
-        System.out.println("Primeiro correo non lido: " + mail.getMensaxe());
-        mail.setLido(true);
-        }
-    }
+    
+    
     
     public void primerNONlid(){
         Correo mail=new Correo();
