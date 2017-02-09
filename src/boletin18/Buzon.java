@@ -39,7 +39,7 @@ public class Buzon {
         System.out.println("Correos por ler: "+contar);
     }
     
-    public void Amosa(int k){//Amosa o último correo esté lido ou non
+    public void Amosa(int k){//Amosa o último correo lido 
         Correo mail=new Correo();
         mail=Buzon.get(k);
         mail.setLido(true);
